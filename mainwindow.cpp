@@ -79,3 +79,28 @@ void MainWindow::on_pushButton_2_clicked()
     train4->terminate();
     train5->terminate();
 }
+
+void MainWindow::on_horizontalSlider_1_valueChanged(int value)
+{
+    train1->setSleep(99 - value);
+}
+
+void MainWindow::on_horizontalSlider_2_valueChanged(int value)
+{
+    train2->setSleep(99 - value);
+}
+
+void MainWindow::on_horizontalSlider_4_valueChanged(int value)
+{
+    train3->setSleep(99 - value);
+}
+
+void MainWindow::on_horizontalSlider_3_valueChanged(int value)
+{
+    train4->setSleep(99 - value);
+}
+
+void MainWindow::on_horizontalSlider_5_valueChanged(int value)
+{
+    train5->setSleep(99 - value);
+}

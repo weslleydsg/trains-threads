@@ -14,6 +14,7 @@ class Train: public QThread{
  Q_OBJECT
 public:
     Train(int,int,int);  //construtor
+    void setSleep(int);         //função a ser executada pela thread
     void run();         //função a ser executada pela thread
 
 
@@ -25,7 +26,7 @@ private:
    int x;           //posição X do train na tela
    int y;           //posição Y do train na tela
    int ID;          //ID do train
-   int velocidade;  //Velocidade. É o tempo de dormir em milisegundos entre a mudança de posição do train
+   int sleep;  //Velocidade. É o tempo de dormir em milisegundos entre a mudança de posição do train
 };
 
 #endif // TRAIN_H

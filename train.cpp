@@ -6,7 +6,11 @@ Train::Train(int ID, int x, int y){
     this->ID = ID;
     this->x = x;
     this->y = y;
-    velocidade = 100;
+    sleep = 99;
+}
+
+void Train::setSleep(int value){
+    this->sleep = value;
 }
 
 //Função a ser executada após executar Train->START
@@ -71,7 +75,7 @@ void Train::run(){
         default:
             break;
         }
-        msleep(velocidade);
+        msleep(sleep);
     }
 }
 
