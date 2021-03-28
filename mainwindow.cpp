@@ -82,25 +82,50 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_horizontalSlider_1_valueChanged(int value)
 {
-    train1->setSleep(99 - value);
+    if (value == 0)
+        train1->setStopped(true);
+    else {
+        train1->setStopped(false);
+        train1->setSleep(99 - value);
+    }
 }
 
 void MainWindow::on_horizontalSlider_2_valueChanged(int value)
 {
-    train2->setSleep(99 - value);
-}
-
-void MainWindow::on_horizontalSlider_4_valueChanged(int value)
-{
-    train3->setSleep(99 - value);
+    if (value == 0)
+        train2->setStopped(true);
+    else {
+        train2->setStopped(false);
+        train2->setSleep(99 - value);
+    }
 }
 
 void MainWindow::on_horizontalSlider_3_valueChanged(int value)
 {
-    train4->setSleep(99 - value);
+    if (value == 0)
+        train3->setStopped(true);
+    else {
+        train3->setStopped(false);
+        train3->setSleep(99 - value);
+    }
+}
+
+void MainWindow::on_horizontalSlider_4_valueChanged(int value)
+{
+    if (value == 0)
+        train4->setStopped(true);
+    else {
+        train4->setStopped(false);
+        train4->setSleep(99 - value);
+    }
 }
 
 void MainWindow::on_horizontalSlider_5_valueChanged(int value)
 {
-    train5->setSleep(99 - value);
+    if (value == 0)
+        train5->setStopped(true);
+    else {
+        train5->setStopped(false);
+        train5->setSleep(99 - value);
+    }
 }
