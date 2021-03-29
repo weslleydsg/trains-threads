@@ -486,6 +486,7 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
+   <zorder>label_trilho_x_3_b</zorder>
    <zorder>label_trilho_y_2_3</zorder>
    <zorder>label_trilho_x_1</zorder>
    <zorder>label_trilho_x_1_2_4</zorder>
@@ -505,7 +506,6 @@
    <zorder>label_trilho_y_1</zorder>
    <zorder>label_trilho_x_1_b</zorder>
    <zorder>label_train1</zorder>
-   <zorder>label_trilho_x_3_b</zorder>
    <zorder>label_trilho_y_3</zorder>
    <zorder>label_trilho_x_3</zorder>
    <zorder>label_train3</zorder>

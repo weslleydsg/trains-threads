@@ -18,7 +18,6 @@ public:
     void setStopped(bool);
     void run(); //função a ser executada pela thread
 
-
 //Cria um sinal
 signals:
     void updateGUI(int,int,int);
@@ -26,9 +25,12 @@ signals:
 private:
    int x;           //posição X do train na tela
    int y;           //posição Y do train na tela
+   int size_movement = 10;
    int ID;          //ID do train
    int sleep;  //Velocidade. É o tempo de dormir em milisegundos entre a mudança de posição do train
    bool stopped;
+
+   void move();
 };
 
 #endif // TRAIN_H
